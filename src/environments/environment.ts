@@ -3,10 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  weatherUrl: 'https://weather-api99.p.rapidapi.com/weather',
+  XRapidAPIKey: 'a443a9f4f5msh3bc8f5bcff34699p1f4e08jsnc2b6496379eb',
+  XRapidAPIHost: 'weather-api99.p.rapidapi.com'
 };
 
-/*
+/*url=https://open-weather13.p.rapidapi.com/city/{cityname}
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *

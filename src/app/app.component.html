@@ -1,4 +1,8 @@
 <div class="container" *ngIf="weatherData!=null">
+  <div class="searchbar">
+    <input type="text" placeholder="...city name" #search>
+    <button  (click)="searchForCity(search.value)">search</button>
+  </div>
   <div class="upper-container">
     <img src="/assets/cold.jpg" *ngIf="(weatherData.main.temp-273.15)<=15">
     <img src="/assets/hot.jpg" *ngIf="(weatherData.main.temp-273.15)>15">

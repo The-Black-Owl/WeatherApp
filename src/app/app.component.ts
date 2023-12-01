@@ -21,5 +21,17 @@ export class AppComponent {
     (error)=>{console.log(error)})
   }
 
+  searchForCity(cityName:string){
+    if(!cityName){
+      this.city='Tongaat';
+    }
+    // this.city=cityName;
+    this.weather.getWeather(this.city=cityName)
+    .subscribe((resposne)=>{
+      this.weatherData=resposne;
+      console.log(resposne);
+    },
+    (error)=>{console.log(error)})
+  }
 
 }
